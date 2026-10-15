@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Giới Thiệu Doanh Nghiệp | TechCompany</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- CSS tùy chỉnh -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0d6efd;
+        }
+
+        .navbar-brand:hover {
+            color: #084298;
+        }
+
+        .hero {
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #0d6efd, #084298);
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: bold;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 20px auto 30px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .about-section {
+            background-color: #ffffff;
+        }
+
+        .service-card {
+            height: 100%;
+            padding: 30px 22px;
+            border: none;
+            border-radius: 12px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-section {
+            background-color: #ffffff;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 1. NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+
+            <a class="navbar-brand" href="#home">
+                TechCompany
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Mở hoặc đóng menu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">
+                            Trang Chủ
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            Về Chúng Tôi
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">
+                            Dịch Vụ
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            Liên Hệ
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <header class="hero text-white text-center" id="home">
+        <div class="container">
+
+            <h1>Chào Mừng Đến Với TechCompany</h1>
+
+            <p>
+                Chúng tôi cung cấp các giải pháp công nghệ,
+                thiết kế website và tiếp thị kỹ thuật số,
+                giúp doanh nghiệp phát triển hiệu quả trong thời đại số.
+            </p>
+
+            <a href="#services" class="btn btn-light btn-lg">
+                Tìm Hiểu Ngay
+            </a>
+
+            <a href="#contact"
+               class="btn btn-outline-light btn-lg ms-2">
+                Liên Hệ
+            </a>
+
+        </div>
+    </header>
+
+    <!-- 3. ABOUT SECTION -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center">
+
+                    <h2 class="section-title">
+                        Về Chúng Tôi
+                    </h2>
+
+                    <p class="text-secondary mt-3">
+                        TechCompany là doanh nghiệp hoạt động trong lĩnh vực
+                        công nghệ thông tin, chuyên cung cấp các giải pháp
+                        thiết kế website, marketing online và hỗ trợ kỹ thuật.
+                    </p>
+
+                    <p class="text-secondary">
+                        Chúng tôi hướng đến việc mang lại sản phẩm chất lượng,
+                        trải nghiệm tốt và giải pháp phù hợp với nhu cầu
+                        của từng khách hàng.
+                    </p>
+
+                    <a href="#contact" class="btn btn-primary mt-2">
+                        Kết Nối Với Chúng Tôi
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. SERVICES SECTION -->
+    <section id="services" class="container py-5">
+
+        <div class="text-center mb-5">
+            <h2 class="section-title">
+                Dịch Vụ Của Chúng Tôi
+            </h2>
+
+            <p class="text-secondary">
+                Giải pháp công nghệ đáp ứng nhu cầu phát triển doanh nghiệp.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Dịch vụ 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card service-card shadow-sm text-center">
+
+                    <div class="service-icon">💻</div>
+
+                    <h3 class="h4">Thiết Kế Website</h3>
+
+                    <p class="text-secondary">
+                        Thiết kế giao diện website hiện đại, thân thiện
+                        với người dùng và tương thích với nhiều thiết bị.
+                    </p>
+
+                    <a href="#contact" class="btn btn-primary mt-auto">
+                        Tìm Hiểu Thêm
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Dịch vụ 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card service-card shadow-sm text-center">
+
+                    <div class="service-icon">📈</div>
+
+                    <h3 class="h4">Marketing Online</h3>
+
+                    <p class="text-secondary">
+                        Hỗ trợ doanh nghiệp tiếp cận khách hàng,
+                        nâng cao nhận diện thương hiệu trên Internet.
+                    </p>
+
+                    <a href="#contact" class="btn btn-primary mt-auto">
+                        Tìm Hiểu Thêm
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Dịch vụ 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card service-card shadow-sm text-center">
+
+                    <div class="service-icon">🛠️</div>
+
+                    <h3 class="h4">Hỗ Trợ Khách Hàng</h3>
+
+                    <p class="text-secondary">
+                        Hỗ trợ giải đáp thắc mắc và hướng dẫn khách hàng
+                        sử dụng dịch vụ hiệu quả.
+                    </p>
+
+                    <a href="#contact" class="btn btn-primary mt-auto">
+                        Tìm Hiểu Thêm
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. CONTACT SECTION -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container text-center">
+
+            <h2 class="section-title">
+                Liên Hệ Với Chúng Tôi
+            </h2>
+
+            <p class="text-secondary mt-3">
+                Bạn cần tư vấn về giải pháp công nghệ?
+                Hãy liên hệ với chúng tôi.
+            </p>
+
+            <div class="mt-4">
+                <p>
+                    <strong>Email:</strong>
+                    contact@company.com
+                </p>
+
+                <p>
+                    <strong>Hotline:</strong>
+                    0988 123 456
+                </p>
+
+                <a href="mailto:contact@company.com"
+                   class="btn btn-primary">
+                    Gửi Email
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+
+            <h5 class="fw-bold">TechCompany</h5>
+
+            <p class="mb-3">
+                Giải pháp công nghệ cho doanh nghiệp hiện đại.
+            </p>
+
+            <div class="mb-3">
+                <a href="#home" class="mx-2">Trang Chủ</a>
+                <a href="#about" class="mx-2">Về Chúng Tôi</a>
+                <a href="#services" class="mx-2">Dịch Vụ</a>
+                <a href="#contact" class="mx-2">Liên Hệ</a>
+            </div>
+
+            <hr class="border-secondary">
+
+            <p class="mb-0 text-white-50">
+                &copy; 2026 TechCompany. All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
